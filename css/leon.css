@@ -1,6 +1,14 @@
 /* start variabls */
 :root {
     --main-color: #10cab7;
+    --secandry-color: #2c4755;
+    --background-color-sec: #f6f6f6;
+    --main-text-color: #333;
+    --sec-text-color: #777;
+    --section-padding: 60px 0;
+    --grad-col: repeat(auto-fit , minmax(300px , 1fr));
+    --gap: 20px ;
+    --line-hight: 1.8;
 }
 /* end variabls */
 /* start global ruls */
@@ -30,7 +38,6 @@ body {
         text-align: center;
     }
 }
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px ) {
     .container {
@@ -189,13 +196,13 @@ body {
 }
 /* start future */
 .futures {
-    padding: 60px 0 ;
-    background-color: #f6f6f6;
+    padding: var(--section-padding) ;
+    background-color: var(--background-color-sec);
 }
 .futures .container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
-    gap: 20px;
+    grid-template-columns: var(--grad-col);
+    gap: var(--gap);
     
 }
 .futures .feat{
@@ -221,10 +228,11 @@ body {
 /* strat sevices */
 .services{
     padding: 30px 0;
+    margin-top: 80px;
 }
 .services .services-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+    grid-template-columns: var(--grad-col);
     gap: 50px;
     margin-top: 30px;
 }
@@ -249,7 +257,7 @@ body {
 }
 .services .services-content .main-image{
     width: 260px;
-    height: 500px;
+    height: 450px;
     background-image: url(../images/pexels-samkolder-2387876.jpg);
     background-size: cover;
 }
@@ -273,3 +281,38 @@ body {
     }
 }
 /* end sevices */
+/* start portfolio */
+.portfolio{
+    padding: var(--section-padding);
+    margin-top: 50px;
+}
+.portfolio .port-content{
+    display: grid;
+    grid-template-columns: var(--grad-col);
+    gap:var(--gap);
+    margin-top: 80px;
+}
+.portfolio .port-image{
+    width: 300px;
+    height: 300px;
+}
+.portfolio .port1{
+    background-image: url(../images/port1.jpg);
+    background-size: cover;
+}
+.portfolio .port2{
+    background-image: url(../images/port2.jpg);
+    background-size: cover;
+}
+.portfolio .port3{
+    background-image: url(../images/port3.jpg);
+    background-size: cover;
+}
+.portfolio .port-text h3{
+    color: var(--main-text-color);
+}
+.portfolio .port-text p{
+    color: var(--sec-text-color);
+    line-height: var(--line-hight);
+}
+/* end portfolio */
