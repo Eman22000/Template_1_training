@@ -285,6 +285,7 @@ body {
 .portfolio{
     padding: var(--section-padding);
     margin-top: 50px;
+    background-color: var(--background-color-sec);
 }
 .portfolio .port-content{
     display: grid;
@@ -316,3 +317,61 @@ body {
     line-height: var(--line-hight);
 }
 /* end portfolio */
+/* start about */
+.about{
+    padding: var(--section-padding);
+    margin-top: 30px;
+}
+.about .about-content{
+    display: grid;
+    grid-template-columns: var(--grad-col);
+    gap: 5px;
+    margin-top: 30px;
+}
+.about .image{
+    width: 250px;
+    height: 350px;
+    background-image: url(../images/about-pic.jpg);
+    background-size: cover;
+}
+.about .about-image{
+    position: relative;
+}
+.about .about-image::before{
+    content: "";
+    width: 100px;
+    height: calc(100% + 100px);
+    background-color: #edecec;
+    top: -50px;
+    left: -20px;
+    position: absolute;
+    z-index: -1;
+}
+.about .about-image::after{
+    content: "";
+    position: absolute;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 70px solid var(--main-color);
+    width: 80px;
+    height: 200px;
+    top: -40px;
+    left: 200px;
+    z-index: -1;
+}
+.about hr{
+    display: block;
+    width: 250px;
+    border-color: var(--main-color);
+    margin-left: -2px;
+}
+.about .about-text p:first-child{
+    font-weight: 800;
+    line-height: 1.8;
+    color: var(--main-text-color);
+    padding-bottom: 30px;
+}
+.about .about-text p:last-child{
+    line-height: 1.8;
+    color: var(--sec-text-color);
+}
+/* end about */
