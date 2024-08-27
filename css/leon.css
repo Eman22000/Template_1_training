@@ -275,7 +275,7 @@ body {
     position: absolute;
     z-index: -1;
 }
-@media only screen and (max-width: 1199px){
+@media (max-width: 1199px){
     .services .services-content .image{
         display: none;
     }
@@ -374,4 +374,59 @@ body {
     line-height: 1.8;
     color: var(--sec-text-color);
 }
+@media (max-width: 991px) {
+    .about .about-content{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about .about-image::before ,.about .about-image::after{
+        display: none;
+    }
+    .about .about-image ,
+    .about hr ,
+    .portfolio .port-image{
+        margin: auto;
+    }
+    .portfolio .port-content{
+        text-align: center;
+    }
+
+}
 /* end about */
+/* start contact */
+.contact{
+    padding: var(--section-padding);
+    margin-top: 80px;
+    background-color: var(--background-color-sec);
+}
+.contact-info{
+    text-align: center;
+    padding: 20px 0;
+}
+.contact-info p{
+    font-weight: 800;
+    color: var(--secandry-color);
+    font-size: 40px;
+    letter-spacing: -3px;
+}
+.contact-info a{
+    display: block;
+    font-weight: 800;
+    color: var(--main-color);
+    letter-spacing: -2px;
+    font-size: 40px;
+    text-decoration: none;
+    margin-top: -40px;
+}
+.contact-info span , .contact i{
+    display: inline-block;
+    padding: 10px 10px;
+    color: var(--secandry-color);
+}
+@media (max-width: 767) {
+    .contact-info a ,
+    .contact-info p{
+        font-size: 20px;
+    }
+}
+/* end contact */
