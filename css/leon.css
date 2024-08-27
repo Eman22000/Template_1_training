@@ -430,3 +430,15 @@ body {
     }
 }
 /* end contact */
+/* start footer */
+.footer{
+    padding: 40px;
+    background-color: var(--secandry-color);
+    color: #ddd;
+    text-align: center;
+    font-weight: 800;
+}
+.footer span{
+    color: var(--main-color);
+}
+/* end footer */
